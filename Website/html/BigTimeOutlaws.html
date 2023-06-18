@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/GameStyle.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/BTO_MainPageStyle.css">
+    <title>BigTimeOutlaws</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light Navbar_BTO"></nav>
+    
+        <div class="Background-game">
+            <img src="../img/GameBackground/Homescreen-01.png" alt="" id="FirstScene">
+
+            <img src="../img/GameBackground/UI-01.png" alt="" class="ui-tempo" id="ui-tempo">
+            <h2 id="Tempo-txt" class="ui-tempo-txt align-middle"></h2>
+            
+            <img src="../img/GameBackground/UI-01.png" alt="" class="ui-dinheiro" id="ui-dinheiro">
+            <h2 id="Dinheiro-txt" class="ui-dinheiro-txt">400$$</h2>
+
+            <!-- Primeira Sala -->
+            <a href="" id="PrimeiraRetangulo"></a>
+            <a href="" id="SegundaRetangulo"></a>
+            <a href="" id="TerceirRetangulo"></a>
+            <a href="" id="QuartaRetangulo"></a>
+            <a href="" id="QuartaRetangulo_2"></a>
+            <a href="" id="ChangeScene"></a>
+
+            <!-- Segunda Sala -->
+            <a href="" id="PrimeiraQuestão"></a>
+            <a href="" id="SegundaQuestão"></a>
+            <a href="" id="TerceiraQuestão"></a>
+            <a href="" id="QuartaQuestão"></a>
+            <a href="" id="QuintaQuestão"></a>
+            <a href="" id="SextaQuestão"></a>
+            <a href="" id="SetimaQuestão"></a>
+            <a href="" id="OitavaQuestão"></a>
+            <a href="" id="NonaQuestão"></a>
+            <a href="" id="DecimaQuestão"></a>
+            <a href="" id="DecimaPriQuestão"></a>
+            <a href="" id="safe"></a>
+
+            <!--DESAFIOS-->
+            <!--DESAFIOS equações com frações-->
+            <!--DESAFIOS equações com frações FACIL-->
+            <div id="Modal_Facil_Primeiro" class="modal">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <span class="close" onclick="closeModal('Modal_Facil_Primeiro')">&times;</span>
+                        </div>
+        
+                        <div class="modal-body">
+                            <h2>Question:</h2>
+                            <div class="FractionDIV">
+                                <span class="fraction">
+                                    <span class="numerator">2</span>
+                                    <span class="denominator">5</span>
+                                  </span>
+                                  +
+                                  <span class="fraction">
+                                    <span class="numerator">7</span>
+                                    <span class="denominator">5</span>
+                                  </span>
+                                  -
+                                  <span class="fraction">
+                                    <span class="numerator">4</span>
+                                    <span class="denominator">5</span>
+                                  </span>
+                            </div>
+                            <input type="text" id="answerInput">
+                        </div>
+                        <div class="modal-footer">
+                            <button onclick="submitAnswer('Modal_Facil_Primeiro')">Responder</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="Modal_Facil_Segundo" class="modal">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <span class="close" onclick="closeModal('Modal_Facil_Segundo')">&times;</span>
+                        </div>
+        
+                        <div class="modal-body">
+                            <h2>Question:</h2>
+                            <div class="FractionDIV">
+                                <span class="fraction">
+                                    <span class="numerator">5</span>
+                                    <span class="denominator">12</span>
+                                  </span>
+                                  +
+                                  <span class="fraction">
+                                    <span class="numerator">7</span>
+                                    <span class="denominator">6</span>
+                                  </span>
+                            </div>
+                            <input type="text" id="answerInput">
+                        </div>
+                        <div class="modal-footer">
+                            <button onclick="submitAnswer('Modal_Facil_Segundo')">Responder</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="Modal_Facil_Terceiro" class="modal">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h2>Question:</h2>
+                            <span class="close" onclick="closeModal('Modal_Facil_Terceiro')">&times;</span>
+                        </div>
+        
+                        <div class="modal-body">
+                            
+                            <div class="FractionDIV">
+                                <span class="fraction">
+                                    <span class="numerator">9</span>
+                                    <span class="denominator">6</span>
+                                  </span>
+                                  -
+                                  <span class="fraction">
+                                    <span class="numerator">3</span>
+                                    <span class="denominator">12</span>
+                                  </span>
+                            </div>
+                            
+                        </div>
+                        <div class="modal-footer">
+                            <input type="text" id="answerInput">
+                            <button onclick="submitAnswer('Modal_Facil_Terceiro')">Responder</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="Modal_Facil_Terceiro" class="modal">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h2>Question:</h2>
+                            <span class="close" onclick="closeModal('Modal_Facil_Terceiro')">&times;</span>
+                        </div>
+        
+                        <div class="modal-body">
+                            
+                            <div class="FractionDIV">
+                                <span class="fraction">
+                                    <span class="numerator">4</span>
+                                    <span class="denominator">2</span>
+                                  </span>
+                                  +
+                                  <span class="fraction">
+                                    <span class="numerator">1</span>
+                                    <span class="denominator">2</span>
+                                  </span>
+                                  -
+                                  <span class="fraction">
+                                    <span class="numerator">2</span>
+                                    <span class="denominator">4</span>
+                                  </span>
+                            </div>
+                            
+                        </div>
+                        <div class="modal-footer">
+                            <input type="text" id="answerInput">
+                            <button onclick="submitAnswer('Modal_Facil_Terceiro')">Responder</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="Modal_Facil_Quarto" class="modal">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h2>Question:</h2>
+                            <span class="close" onclick="closeModal('Modal_Facil_Quarto')">&times;</span>
+                        </div>
+        
+                        <div class="modal-body">
+                            
+                            <div class="FractionDIV">
+                                <span class="fraction">
+                                    <span class="numerator">2</span>
+                                    <span class="denominator">5</span>
+                                  </span>
+                                  +
+                                  <span class="fraction">
+                                    <span class="numerator">0.2</span>
+                                  </span>
+                            </div>
+                            
+                        </div>
+                        <div class="modal-footer">
+                            <input type="text" id="answerInput">
+                            <button onclick="submitAnswer('Modal_Facil_Quarto')">Responder</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="Modal_Facil_Quinta" class="modal">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h2>Question:</h2>
+                            <span class="close" onclick="closeModal('Modal_Facil_Quinta')">&times;</span>
+                        </div>
+        
+                        <div class="modal-body">
+                            
+                            <div class="FractionDIV">
+                                <span class="fraction">
+                                    <span class="numerator">1</span>
+                                    <span class="denominator">5</span>
+                                  </span>
+                                  +
+                                  <span class="fraction">
+                                    <span class="numerator">1.6</span>
+                                  </span>
+                            </div>
+                            
+                        </div>
+                        <div class="modal-footer">
+                            <input type="text" id="answerInput">
+                            <button onclick="submitAnswer('Modal_Facil_Quinta')">Responder</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--DESAFIOS equações com frações MEDIO-->
+            <div id="Modal_Medio_Primeira" class="modal">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h2>Question:</h2>
+                            <span class="close" onclick="closeModal('Modal_Medio_Primeira')">&times;</span>
+                        </div>       
+                        <div class="modal-body">
+                            
+                            <div class="FractionDIV">
+                                <span>O Tiago e o Rodrigo usaram </span>
+                                <span class="fraction">
+                                    <span class="numerator">7</span>
+                                    <span class="denominator">10</span>
+                                  </span>
+                                  <span> do feno para alimentarem os seus cavalos. O tiago usou</span>
+                                  <span class="fraction">
+                                    <span class="numerator">1</span>
+                                    <span class="denominator">2</span>
+                                  </span>
+                                <span>do feno.</span>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <label for="answerInput">Quanto feno é que o Rodrigo(em decimal)</label>
+                            <br>
+                            <input type="text" id="answerInput">
+                            
+                            <button onclick="submitAnswer('Modal_Medio_Primeira')">Responder</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="Modal_Medio_Segundo" class="modal">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h2>Question:</h2>
+                            <span class="close" onclick="closeModal('Modal_Medio_Segundo')">&times;</span>
+                        </div>
+        
+                        <div class="modal-body">
+                            
+                            <div class="FractionDIV">
+                                <span class="fraction">
+                                    <span class="numerator">3</span>
+                                    <span class="denominator">5</span>
+                                  </span>
+                                  +
+                                  <span class="fraction">
+                                    <span class="numerator">(2-0.5)</span>
+                                  </span>
+                            </div>
+                            
+                        </div>
+                        <div class="modal-footer">
+                            <input type="text" id="answerInput">
+                            <button onclick="submitAnswer('Modal_Medio_Segundo')">Responder</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--DESAFIOS Potencias de expoente Natural-->
+            <!--DESAFIOS Potencias de expoente Natural FACIL-->
+            <div id="Modal_Facil_Sexto" class="modal">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h2>Pergunta:</h2>
+                            <span class="close" onclick="closeModal('Modal_Facil_Sexto')">&times;</span>
+                        </div>
+        
+                        <div class="modal-body">
+                            
+                            <div class="FractionDIV">
+                                <span class="parentheses">(</span>
+                                <span class="fraction">
+                                    <span class="numerator">1</span>
+                                    <span class="denominator">2</span>
+                                </span>
+                                <span class="parentheses">)</span>
+                                <span class="fraction">
+                                    <span class="numerator"><sup class="superscript"> 2</sup></span>
+                                </span>  
+                                  *
+                                  <span class="parentheses">(</span>
+                                  <span class="fraction">
+                                      <span class="numerator">1</span>
+                                      <span class="denominator">2</span>
+                                  </span>
+                                  <span class="parentheses">)</span>
+                                  <span class="fraction">
+                                      <span class="numerator"><sup class="superscript"> 4</sup></span>
+                                  </span>  
+                            </div>
+                            
+                        </div>
+                        <div class="modal-footer">
+                            <span>Left Span</span>
+                            <input type="text" id="answerInput">
+                            <button class="Responde" onclick="submitAnswer('Modal_Facil_Sexto')">Responder</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="Modal_Facil_Setima" class="modal">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h2>Pergunta:</h2>
+                            <span class="close" onclick="closeModal('Modal_Facil_Setima')">&times;</span>
+                        </div>
+        
+                        <div class="modal-body">
+                            
+                            <div class="FractionDIV">
+                                <span class="parentheses">(</span>
+                                <span class="fraction">
+                                    <span class="numerator">1</span>
+                                    <span class="denominator">3</span>
+                                </span>
+                                <span class="parentheses">)</span>
+                                <span class="fraction">
+                                    <span class="numerator"><sup class="superscript"> 6</sup></span>
+                                </span>  
+                                  /
+                                  <span class="parentheses">(</span>
+                                  <span class="fraction">
+                                      <span class="numerator">1</span>
+                                      <span class="denominator">3</span>
+                                  </span>
+                                  <span class="parentheses">)</span>
+                                  <span class="fraction">
+                                      <span class="numerator"><sup class="superscript"> 4</sup></span>
+                                  </span>  
+                            </div>                            
+                        </div>
+                        <div class="modal-footer">
+                            <span>Left Span</span>
+                            <input type="text" id="answerInput">
+                            <button class="Responde" onclick="submitAnswer('Modal_Facil_Setima')">Responder</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--DESAFIOS Potencias de expoente Natural MEDIO-->
+            <div id="Modal_Medio_Terca" class="modal">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h2>Pergunta:</h2>
+                            <span class="close" onclick="closeModal('Modal_Medio_Terca')">&times;</span>
+                        </div>
+                        <div class="modal-body">                            
+                            <div class="FractionDIV">
+                                <span class="parentheses">(</span>
+                                <span class="fraction">
+                                    <span class="numerator">3</span>
+                                    <span class="denominator">2</span>
+                                </span>
+                                <span class="parentheses">)</span>
+                                <span class="fraction">
+                                    <span class="numerator"><sup class="superscript">2</sup></span>
+                                </span>  
+                                  *
+                                  <span class="fraction">
+                                      <span class="numerator">1.5</span>
+
+                                  </span>
+                                  <span class="fraction">
+                                      <span class="numerator"><sup class="superscript">5</sup></span>
+                                  </span>  
+                            </div>
+                            
+                        </div>
+                        <div class="modal-footer">
+                            <span>Left Span</span>
+                            <input type="text" id="answerInput">
+                            <button class="Responde" onclick="submitAnswer('Modal_Medio_Terca')">Responder</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="Modal_Medio_Quarta" class="modal">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h2>Pergunta:</h2>
+                            <span class="close" onclick="closeModal('Modal_Medio_Quarta')">&times;</span>
+                        </div>
+                        <div class="modal-body">                            
+                            <div class="FractionDIV">
+                                <span class="fraction">
+                                    <span class="numerator">0.5</span>
+                                </span>
+                                <span class="fraction">
+                                    <span class="numerator"><sup class="superscript">5</sup></span>
+                                </span>  
+                                  /
+                                  <span class="parentheses">(</span>
+                                <span class="fraction">
+                                    <span class="numerator">1</span>
+                                    <span class="denominator">2</span>
+                                </span>
+                                <span class="parentheses">)</span>
+                                <span class="fraction">
+                                    <span class="numerator"><sup class="superscript">2</sup></span>
+                                </span>  
+                                  *
+                                  <span class="fraction">
+                                    <span class="numerator">3</span>
+                                </span>
+                                <span class="fraction">
+                                    <span class="numerator"><sup class="superscript">4</sup></span>
+                                </span>  
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <span>Left Span</span>
+                            <input type="text" id="answerInput">
+                            <button class="Responde" onclick="submitAnswer('Modal_Medio_Quarta')">Responder</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="Modal_Medio_Quinta" class="modal">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h2>Pergunta:</h2>
+                            <span class="close" onclick="closeModal('Modal_Medio_Quinta')">&times;</span>
+                        </div>
+                        <div class="modal-body">                            
+                            <div class="FractionDIV">
+                                <span class="fraction">
+                                    <span class="numerator">0.5</span>
+                                </span>
+                                <span class="fraction">
+                                    <span class="numerator"><sup class="superscript">6</sup></span>
+                                </span>  
+                                  *
+                                  <span class="fraction">
+                                      <span class="numerator">4</span>
+                                  </span>
+                                  <span class="fraction">
+                                      <span class="numerator"><sup class="superscript">5</sup></span>
+                                  </span>
+                                  +
+                                  <span class="fraction">
+                                    <span class="numerator">8</span>
+                                </span>
+                                <span class="fraction">
+                                    <span class="numerator"><sup class="superscript">3</sup></span>
+                                </span>  
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <span>Left Span</span>
+                            <input type="text" id="answerInput">
+                            <button class="Responde" onclick="submitAnswer('Modal_Medio_Quinta')">Responder</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--DESAFIOS Potencias de expoente Natural DIFICIL-->
+            <div id="Modal_Dificil_Segundo" class="modal">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h2>Pergunta:</h2>
+                            <span class="close" onclick="closeModal('Modal_Dificil_Segundo')">&times;</span>
+                        </div>
+                        <div class="modal-body">                            
+                            <div class="FractionDIV">
+                                <span class="fraction">
+                                    <span class="numerator">1</span>
+                                </span>
+                                <span class="fraction">
+                                    <span class="numerator"><sup class="superscript">21</sup></span>
+                                </span>  
+                                  *
+                                  <span class="fraction">
+                                      <span class="numerator">6</span>
+                                  </span>
+                                  <span class="fraction">
+                                      <span class="numerator"><sup class="superscript">5</sup></span>
+                                  </span>
+                                  /
+                                <span class="fraction">
+                                    <span class="numerator">2</span>
+                                </span>
+                                <span class="fraction">
+                                    <span class="numerator"><sup class="superscript">5</sup></span>
+                                </span>
+                                *
+                                <span class="fraction">
+                                    <span class="numerator">3</span>
+                                </span>
+                                <span class="fraction">
+                                    <span class="numerator"><sup class="superscript">4</sup></span>
+                                </span>
+                                *
+                                <span class="parentheses">(</span>
+                                <span class="fraction">
+                                    <span class="numerator">2</span>
+                                </span>
+                                <span class="fraction">
+                                    <span class="numerator"><sup class="superscript">3</sup></span>
+                                </span>
+                                <span class="parentheses">)</span>
+                                <span class="fraction">
+                                    <span class="numerator"><sup class="superscript">2</sup></span>
+                                </span>  
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <span>Left Span</span>
+                            <input type="text" id="answerInput">
+                            <button class="Responde" onclick="submitAnswer('Modal_Dificil_Segundo')">Responder</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--DESAFIOS Pitaguras-->
+            <div id="Modal_Dificil_Primeiro" class="modal">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <span class="close" onclick="closeModal('Modal_Dificil_Primeiro')">&times;</span>
+                        </div>
+                        <div class="modal-body">
+                            <h2>Question:</h2>
+                            <img src="../../../BigTimeOutlaws-Hugo-daluz/desafios/teorema de pitagoras/Captura de ecrã 2023-06-15 210536.png" alt="" class="img-modal">
+                            <input type="text" id="answerInput">
+                        </div>
+                        <div class="modal-footer">
+                            <button onclick="submitAnswer('Modal_Dificil_Primeiro')">Responder</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h3 id="RandomNumberFirstRoom"></h3>
+            <h3 id="Dialgo-txt" class="Dialgo align-middle"></h3>
+            <a href="" id="Goback"></a>
+        </div>
+
+    <script src="../java/init.js"></script>
+    <script src="../java/views/navbarView/NavbarView_game.js" type="module"></script>
+    <script src="../java/views/GameView.js"></script>
+</body>
+</html>
