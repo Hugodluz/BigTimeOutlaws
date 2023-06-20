@@ -1,0 +1,37 @@
+.Navbar_BTO{
+    background-color: #FFD966 !important;
+}
+.background_image_BTO{
+    background-image: url(../img/background-02.jpeg);
+    background-position-y: -30px;
+}
+.table_BTO, th, td{
+    border: 8px solid #A3703C;
+    width: 90%;
+}
+th,td{
+    background-color: #FFD966;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.Table_Container_BTO{
+    background-image: url("../img/background-01.png") !important;
+    background-size: auto !important;
+}
+.Table_ContainerPad_BTO{
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+.img_reduction{
+    width: 40%;
+    height: auto;
+    padding-top: 50px;
+    padding-bottom: 180px;
+}
+html {
+    scroll-behavior: smooth;
+  }
+.Th_TD{
+    padding-right: 100px;
+    padding-left:100px ;
+}
